@@ -68,3 +68,58 @@ docker stop <container-id>
 docker rm <container-id>
 docker rm -f <container-id>
 ```
+
+### 🧹 Cleanup
+
+```bash
+docker container prune
+docker image prune
+docker system prune
+docker system prune -a
+```
+
+### 🧪 Example: Run Nginx
+
+```bash
+docker run -d -p 8080:80 nginx
+```
+
+Then open:
+
+```
+http://localhost:8080
+```
+
+### 🧪 Example: Interactive Alpine Container
+Alpine Linux is a lightweight Linux image used for testing.
+
+```bash
+docker run -it alpine sh
+```
+
+Inside container:
+
+```
+ls
+pwd
+cat /etc/os-release
+```
+
+---
+
+## 📚 Learning Outcome
+After this, I learned:
+
+- How containers work
+- Difference between images and containers
+- How to manage Docker resources
+- Basic real-world usage
+
+---
+
+## 🚀 Next Steps
+
+- Learn Dockerfile
+- Build custom images
+- Learn Docker Compose
+- Run full-stack apps (frontend + backend + DB)
